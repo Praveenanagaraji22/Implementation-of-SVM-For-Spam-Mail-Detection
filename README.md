@@ -22,6 +22,7 @@ Program to implement the SVM For Spam Mail Detection..
 Developed by: PRAVEENA N
 RegisterNumber: 212222040122
 */
+
 import chardet
 file='/content/spam.csv'
 with open(file,'rb') as rawdata:
@@ -52,15 +53,20 @@ accuracy
 
 ## Output:
 ![image](https://github.com/Praveenanagaraji22/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119393514/cb437bcd-ce4b-4129-93c9-b49a28996ec5)
-data.head():
+
+### data.head():
 ![image](https://github.com/Praveenanagaraji22/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119393514/7e0730a8-fbc6-4e5e-8c4d-92650538d429)
-data.info():
+
+### data.info():
 ![image](https://github.com/Praveenanagaraji22/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119393514/bb78c3ba-5528-434b-af73-036fef989126)
-data.isnull.sum():
+
+### data.isnull.sum():
 ![image](https://github.com/Praveenanagaraji22/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119393514/daee9789-feba-4a8f-92d9-05ebf503fd5b)
-Y_prediction value:
+
+### Y_prediction value:
 ![image](https://github.com/Praveenanagaraji22/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119393514/14110d77-80cb-4484-b1ce-eb9aab780d46)
-Accuracy value:
+
+### Accuracy value:
 ![image](https://github.com/Praveenanagaraji22/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119393514/94b8566d-bb61-4010-9b6b-d3716815c1a7)
 
 ## Result:
