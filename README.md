@@ -22,17 +22,22 @@ Program to implement the SVM For Spam Mail Detection..
 Developed by: PRAVEENA N
 RegisterNumber: 212222040122
 */
-
+```
+```
 import chardet
 file='/content/spam.csv'
 with open(file,'rb') as rawdata:
   result = chardet.detect(rawdata.read(100000))
 result
+```
+```
 import pandas as pd
 data=pd.read_csv('/content/spam.csv',encoding='Windows-1252')
 data.head()
 data.info()
 data.isnull().sum()
+```
+```
 x=data["v1"].values
 y=data["v2"].values
 from sklearn.model_selection import train_test_split
@@ -44,8 +49,11 @@ x_test=cv.transform(x_test)
 from sklearn.svm import SVC
 svc=SVC()
 svc.fit(x_train,y_train)
+```
+```
 y_pred=svc.predict(x_test)
 y_pred
+
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
