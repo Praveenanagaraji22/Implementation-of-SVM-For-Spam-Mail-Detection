@@ -8,12 +8,14 @@ To write a program to implement the SVM For Spam Mail Detection.
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
+```
 Step 1 - Start 
 Step 2 - Import the required packages.
 Step 3 - Import the dataset to operate on.
 Step 4 - Split the dataset.
 Step 5 - Predict the required output.
 Step 6 - Stop
+```
 
 ## Program:
 ```
@@ -40,6 +42,8 @@ data.isnull().sum()
 ```
 x=data["v1"].values
 y=data["v2"].values
+```
+```
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
 from sklearn.feature_extraction.text import CountVectorizer
